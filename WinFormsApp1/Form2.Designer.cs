@@ -90,7 +90,7 @@
             // 
             groupBox2.Controls.Add(checkBox1);
             groupBox2.Controls.Add(numericUpDown1);
-            groupBox2.Location = new Point(43, 226);
+            groupBox2.Location = new Point(33, 226);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(200, 100);
             groupBox2.TabIndex = 1;
