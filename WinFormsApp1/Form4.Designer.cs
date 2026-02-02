@@ -49,7 +49,7 @@
             lstStats.ItemHeight = 15;
             lstStats.Location = new Point(37, 148);
             lstStats.Name = "lstStats";
-            lstStats.Size = new Size(226, 184);
+            lstStats.Size = new Size(277, 184);
             lstStats.TabIndex = 1;
             // 
             // button2
