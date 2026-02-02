@@ -24,24 +24,37 @@ namespace WinFormsApp1
             frm2.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
+
+
+
+
+        private void Form1_Load(object sender, EventArgs e)
         {
-            Form3 frm3 = new Form3();
-            frm3.ShowDialog();
+
         }
 
-        private void button3_Click(object sender, EventArgs e)
+
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
             Form4 frm4 = new Form4();
             frm4.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form3 frm3 = new Form3();
+            frm3.ShowDialog();
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
         {
 
         }

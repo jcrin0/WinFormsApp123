@@ -28,12 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form3";
+            label1 = new Label();
+            txtOdabir = new TextBox();
+            button1 = new Button();
+            button2 = new Button();
+            lstKnjige = new ListBox();
+            button3 = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(23, 40);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Naslov ili autor:";
+            // 
+            // txtOdabir
+            // 
+            txtOdabir.Location = new Point(118, 40);
+            txtOdabir.Name = "txtOdabir";
+            txtOdabir.Size = new Size(100, 23);
+            txtOdabir.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(252, 19);
+            button1.Name = "button1";
+            button1.Size = new Size(114, 62);
+            button1.TabIndex = 2;
+            button1.Text = "Pretraži";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(390, 19);
+            button2.Name = "button2";
+            button2.Size = new Size(116, 62);
+            button2.TabIndex = 3;
+            button2.Text = "Osvježi";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // lstKnjige
+            // 
+            lstKnjige.FormattingEnabled = true;
+            lstKnjige.ItemHeight = 15;
+            lstKnjige.Location = new Point(91, 100);
+            lstKnjige.Name = "lstKnjige";
+            lstKnjige.Size = new Size(289, 229);
+            lstKnjige.TabIndex = 4;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(160, 335);
+            button3.Name = "button3";
+            button3.Size = new Size(134, 67);
+            button3.TabIndex = 5;
+            button3.Text = "Zatvori";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // Form3
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(lstKnjige);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(txtOdabir);
+            Controls.Add(label1);
+            Name = "Form3";
+            Text = "Form3";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtOdabir;
+        private Button button1;
+        private Button button2;
+        private ListBox lstKnjige;
+        private Button button3;
     }
 }

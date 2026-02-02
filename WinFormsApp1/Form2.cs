@@ -36,5 +36,43 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string zapis = txtNaslov.Text + "," + txtAutor.Text + "," + godina.Text + "," + cbZanr.Text + "," + brStr.Text + "," + dostupnost.Checked;
+            Admin.SaveBook(zapis);
+            MessageBox.Show("Knjiga je spremljena.");
+            txtNaslov.Text = "";
+            txtAutor.Text = "";
+            godina.Text = "";
+            cbZanr.Text = "";
+            brStr.Text = "";
+            dostupnost.Checked = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cbZanr_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
